@@ -17,9 +17,8 @@ class Patient
   end
   
   def appointments
-    self.all.select do |d_appt|
-      binding.pry
-      d_appt.name == Patient.name
+    Appointment.all.select do |d_appt|
+      d_appt.doctor.name == self.name
     end
   end
   
