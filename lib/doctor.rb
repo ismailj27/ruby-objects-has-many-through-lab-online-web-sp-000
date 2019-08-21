@@ -24,7 +24,7 @@ class Doctor
   
   def patients
     patients_arr = []
-    appointments.select do |d_appt|
+    appointments.each do |d_appt|
       patients_arr << d_appt.patient
     end
     patients_arr
