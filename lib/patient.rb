@@ -25,9 +25,10 @@ class Patient
   def doctors
     doctors_arr = []
     appointments.each do |d_appt|
-      patients_arr << d_appt.patient
+      binding.pry
+      doctors_arr << d_appt.patient
     end
-    patients_arr
+    doctors_arr
   end
   
 end
