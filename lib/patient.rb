@@ -26,7 +26,7 @@ class Patient
     doctors_arr = []
     appointments.each do |d_appt|
       binding.pry
-      doctors_arr << d_appt.doctor.name
+      doctors_arr << d_appt.doctor
     end
     doctors_arr
   end
