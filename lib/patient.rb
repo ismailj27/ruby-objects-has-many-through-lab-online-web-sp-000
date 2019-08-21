@@ -23,9 +23,11 @@ class Patient
   end
   
   def doctors
-    appointments.select do |d_appt|
-      d_appt.name == Doctor.name
+    doctors_arr = []
+    appointments.each do |d_appt|
+      patients_arr << d_appt.patient
     end
+    patients_arr
   end
   
 end
