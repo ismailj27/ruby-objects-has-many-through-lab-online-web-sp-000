@@ -25,7 +25,6 @@ class Patient
   def doctors
     doctors_arr = []
     appointments.each do |d_appt|
-      binding.pry
       doctors_arr << d_appt.doctor
     end
     doctors_arr
